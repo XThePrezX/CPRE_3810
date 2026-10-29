@@ -1,0 +1,123 @@
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+entity datapath2 is
+    port (
+        iClk       : in std_logic;
+        iRst       : in std_logic;
+        iRs        : in std_logic_vector(4 downto 0);
+        iRt        : in std_logic_vector(4 downto 0);
+        iRd        : in std_logic_vector(4 downto 0);
+        iImm       : in std_logic_vector(15 downto 0);
+        iMemRead   : in std_logic;
+        iMemWrite  : in std_logic;
+        iRegWrite  : in std_logic;
+        iALUSrc    : in std_logic;
+        iALUOp     : in std_logic;
+        oALUResult : out std_logic_vector(31 downto 0);
+        oMemData   : out std_logic_vector(31 downto 0);
+        oRead1     : out std_logic_vector(31 downto 0);
+        oRead2     : out std_logic_vector(31 downto 0)
+    );
+end datapath2;
+
+architecture Structural of datapath2 is
+
+    component Register_File is
+        port (
+            iClock       : in std_logic;
+            iReset       : in std_logic;
+            iWriteEnable : in std_logic;
+            iData        : in std_logic_vector(31 downto 0);
+            iRs          : in std_logic_vector(4 downto 0);
+            iRt          : in std_logic_vector(4 downto 0);
+            iRd          : in std_logic_vector(4 downto 0);
+            oRead1       : out std_logic_vector(31 downto 0);
+            oRead2       : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component part2thing is
+        generic (N : integer := 32);
+        port (
+            i_A_nBIT  : in std_logic_vector(N-1 downto 0);
+            i_B_nBIT  : in std_logic_vector(N-1 downto 0);
+            nAdd_Sub  : in std_logic;
+            i_Im      : in std_logic_vector(N-1 downto 0);
+            ALUSrc    : in std_logic;
+            o_Sum_nBit: out std_logic_vector(N-1 downto 0)
+        );
+    end component;
+
+    component mem is
+        port (
+            clk  : in std_logic;
+            addr : in std_logic_vector(9 downto 0); 
+            data : in std_logic_vector(31 downto 0);
+            we   : in std_logic;
+            q    : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component extender_16t32 is
+        port (
+            ivalue        : in std_logic_vector(15 downto 0);
+            ovalue        : out std_logic_vector(31 downto 0);
+            isignExtension: in std_logic
+        );
+    end component;
+
+    signal ReadData1, ReadData2, ALUInputB, ALUResult, MemData, ExtImm, WriteBackData : std_logic_vector(31 downto 0);
+
+begin
+
+    -- Select the data to write back to the register file: ALU result or memory output
+    WriteBackData <= MemData when iMemRead = '1' else ALUResult;
+
+    RegFile: Register_File
+    port map (
+        iClock       => iClk,
+        iReset       => iRst,
+        iWriteEnable => iRegWrite,
+        iData        => WriteBackData,  -- ? updated to use muxed input
+        iRs          => iRs,
+        iRt          => iRt,
+        iRd          => iRd,
+        oRead1       => ReadData1,
+        oRead2       => ReadData2
+    );
+
+    Extender: extender_16t32
+    port map (
+        ivalue         => iImm,
+        ovalue         => ExtImm,
+        isignExtension => '1'
+    );
+
+    ALUInputB <= ReadData2 when iALUSrc = '0' else ExtImm;
+
+    ALU: part2thing
+    port map (
+        i_A_nBIT   => ReadData1,
+        i_B_nBIT   => ALUInputB,
+        nAdd_Sub   => iALUOp,
+        i_Im       => ExtImm,
+        ALUSrc     => iALUSrc,
+        o_Sum_nBit => ALUResult
+    );
+
+    DataMemory: mem
+    port map (
+        clk  => iClk,
+        addr => ALUResult(9 downto 0),
+        data => ReadData2,
+        we   => iMemWrite,
+        q    => MemData
+    );
+
+    oALUResult <= ALUResult;
+    oMemData   <= MemData;
+    oRead1     <= ReadData1;
+    oRead2     <= ReadData2;
+
+end Structural;

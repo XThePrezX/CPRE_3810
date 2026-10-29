@@ -1,0 +1,1215 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+Z3 !s12c _opt2
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 d/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath
+T_opt
+!s110 1759711015
+VEKID>O`a=DagW]>XhcK=h2
+04 17 5 work tb_extender_12t32 mixed 1
+=1-000ae431a4f1-68e30f27-7eca1-49c8
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work +acc
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2025.1_2;82
+R4
+T_opt1
+!s110 1759725386
+VkZ3M]i7j]<WH6U@hI1j9V2
+04 24 5 work tb_mysecondriscvdatapath mixed 1
+=9-000ae431a4f1-68e3474a-68edd-67d7
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt1
+R11
+R4
+T_opt2
+!s110 1759449757
+V8BCcMT0<O8inl6[S<=S[L3
+04 7 5 work tb_dmem mixed 1
+=5-000ae431a4f1-68df129d-46f80-b035
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt2
+R11
+R4
+Eadder_struc
+Z12 w1757367866
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 71
+R4
+Z15 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd
+Z16 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd
+l0
+L6 1
+V9;b]LI4CQEkNoa0KRU:j?3
+!s100 AIMLVALi97_8[C[@BGb4Y3
+Z17 OL;C;2025.1_2;82
+32
+Z18 !s110 1759860586
+!i10b 1
+Z19 !s108 1759860586.000000
+Z20 !s90 -reportprogress|300|-work|work|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_12t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_12t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd|
+Z21 !s107 /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_12t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_12t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 CvgOpt 0
+Astructural
+R13
+R14
+Z24 DEx4 work 11 adder_struc 0 22 9;b]LI4CQEkNoa0KRU:j?3
+!i122 71
+l38
+Z25 L16 35
+Z26 V1K88f7fW>BfKDBZkJ8;iJ1
+Z27 !s100 :onKhcozRf:?eP:nP3zL91
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eadder_subtractor
+Z28 w1757454550
+R13
+R14
+!i122 71
+R4
+Z29 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd
+Z30 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd
+l0
+L6 1
+VARCC1FjAD3>b<3Qg1NzQG1
+!s100 938mM@ifABRj=NDbd<?8P1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z31 DEx4 work 16 adder_subtractor 0 22 ARCC1FjAD3>b<3Qg1NzQG1
+!i122 71
+l47
+Z32 L16 40
+Z33 VHbdMHVIe020?8[biMI_F22
+Z34 !s100 ]H<lzQCU;1a5<^jl0:0CO2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eandg2
+Z35 w1756241934
+R13
+R14
+!i122 71
+R4
+Z36 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd
+Z37 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd
+l0
+Z38 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z39 DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 71
+l32
+Z40 L31 6
+Z41 VJVOzCk?IH:iJ5bCRU`CK13
+Z42 !s100 I`@Z@UBObS]<7m8bPgKUS1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ebit32_32_1mux
+Z43 w1739912155
+R13
+R14
+!i122 71
+R4
+Z44 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd
+Z45 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd
+l0
+L7 1
+V1HdJg^TVFzZLWA?YG_1N61
+!s100 X@lgIF5imZ2Z1?04ZQ=a>0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z46 DEx4 work 13 bit32_32_1mux 0 22 1HdJg^TVFzZLWA?YG_1N61
+!i122 71
+l47
+Z47 L46 39
+Z48 V@m8YhcOaVZz:B<BVZ`8W>1
+Z49 !s100 b38fl_aCQW>;D@K:REcR22
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edf_5to32_decoder
+Z50 w1759532335
+R13
+R14
+!i122 71
+R4
+Z51 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd
+Z52 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd
+l0
+L4 1
+VkYzWV@J6EE1]IgSRPa?MD2
+!s100 L9@069Hj^L9?LoJ4b0O[B3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z53 DEx4 work 16 df_5to32_decoder 0 22 kYzWV@J6EE1]IgSRPa?MD2
+!i122 71
+l12
+Z54 L10 40
+Z55 V_hVFdmR7aeVXna:DKc4lX0
+Z56 !s100 b;]z5mLY[8@MVP5AfAd7S2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edffg
+Z57 w1756242071
+R13
+R14
+!i122 71
+R4
+Z58 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd
+Z59 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd
+l0
+R38
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R13
+R14
+Z60 DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 71
+l37
+Z61 L33 29
+Z62 V`CHXPZKVEek`3gFWL_zFm2
+Z63 !s100 iOdlTUid@@]UimFK_53^C1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eextender16t32
+Z64 w1740373604
+R13
+R14
+!i122 38
+R4
+Z65 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_16t32.vhd
+Z66 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_16t32.vhd
+l0
+L6 1
+V5?]n05_KT1ag<ZmQFVQOg3
+!s100 m036`3539fH:0jH2Zd_[d2
+R17
+32
+Z67 !s110 1759709653
+!i10b 1
+Z68 !s108 1759709653.000000
+Z69 !s90 -reportprogress|300|-work|work|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_16t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_16t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd|
+Z70 !s107 /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_16t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_16t32.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/dffg.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/DF_5to32_Decoder.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/bit32_32_1Mux.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/andg2.vhd|/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Adder_Subtractor.vhd|
+!i113 0
+R22
+R23
+Abehavioral
+R13
+R14
+DEx4 work 13 extender16t32 0 22 5?]n05_KT1ag<ZmQFVQOg3
+!i122 38
+l15
+L14 14
+VOOY]B[l?fL>SSbgInOQJ]1
+!s100 R>H@;EJ32]NW?Fn<`HbjT0
+R17
+32
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R22
+R23
+Eextender_12t32
+Z71 w1759710553
+R13
+R14
+!i122 71
+R4
+Z72 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_12t32.vhd
+Z73 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/extender_12t32.vhd
+l0
+L4 1
+VF7OFMi_Zeb2EfFFa6_n;A3
+!s100 bLZQb:6:@;=iOYHTZ3o6j0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Artl
+R13
+R14
+Z74 DEx4 work 14 extender_12t32 0 22 F7OFMi_Zeb2EfFFa6_n;A3
+!i122 71
+l12
+Z75 L11 5
+Z76 Vj<;JM=P:2?R3T]ViJjzP30
+Z77 !s100 DAAc3hUO0iXPeX:US2kVL3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Einvg
+R35
+R13
+R14
+!i122 71
+R4
+Z78 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd
+Z79 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/invg.vhd
+l0
+R38
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z80 DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 71
+l31
+Z81 L30 6
+Z82 Vch>li:oKYZkCO5]GamViK1
+Z83 !s100 bk7I76o8e1LURdoZEQb8H0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emem
+Z84 w1759714925
+Z85 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R13
+R14
+!i122 71
+R4
+Z86 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd
+Z87 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Artl
+R85
+R13
+R14
+Z88 DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 71
+l37
+Z89 L27 24
+Z90 V`6^NbPhKNmSBg:`:Un8;g3
+Z91 !s100 OI8_3><BhDkT3l3n8`OXd3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1
+Z92 w1757364278
+R13
+R14
+!i122 71
+R4
+Z93 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd
+Z94 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1.vhd
+l0
+L6 1
+Vki_9NFb<XV]l0LGhdIRjz2
+!s100 ]L40A<ngZgzSAHhQ7iz>z0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z95 DEx4 work 6 mux2t1 0 22 ki_9NFb<XV]l0LGhdIRjz2
+!i122 71
+l14
+Z96 L13 7
+Z97 VPUoLo0Pe6BN>?1W5b4F=I1
+Z98 !s100 o6oG@]=ZE6ZZi2>H6djh13
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1_data
+Z99 w1757969240
+R13
+R14
+!i122 71
+R4
+Z100 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd
+Z101 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_DATA.vhd
+l0
+L6 1
+V;8hPejR3g0BMcH<N[OSE00
+!s100 IKDLmDj><817a0XO]XOmP1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z102 DEx4 work 11 mux2t1_data 0 22 ;8hPejR3g0BMcH<N[OSE00
+!i122 71
+l14
+R96
+Z103 V::0GdazjN@LLmRJg9`>bl2
+Z104 !s100 TiXOS74[@ARnGH>UP<B5Q1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1_n
+Z105 w1758728121
+R13
+R14
+!i122 71
+R4
+Z106 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd
+Z107 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_N.vhd
+l0
+L21 1
+VFY=Tc@WO1TP4Z42>dBMei3
+!s100 BKZeKCAB2i6lge3>7TA3d3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z108 DEx4 work 8 mux2t1_n 0 22 FY=Tc@WO1TP4Z42>dBMei3
+!i122 71
+l39
+Z109 L30 21
+Z110 V<E5VGgLO>Q9]R@FeMzmbM1
+Z111 !s100 ^A6Y>b?nAl7RRC?J9@lDN2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1_str
+Z112 w1757355633
+R13
+R14
+!i122 71
+R4
+Z113 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd
+Z114 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/mux2t1_STR.vhd
+l0
+L8 1
+VHJAobaTf_dZaP50M2;@XM1
+!s100 FlnaXF7a6OEd>0mzAc`1Q1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z115 DEx4 work 10 mux2t1_str 0 22 HJAobaTf_dZaP50M2;@XM1
+!i122 71
+l36
+Z116 L15 32
+Z117 VYQALbDN@<ZIcbjV]<mPaC0
+Z118 !s100 a6BXY6c_IDPVWWY7G^aSS1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emyfirstriscvdatapath
+Z119 w1758754669
+R13
+R14
+!i122 71
+R4
+Z120 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd
+Z121 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MyFirstRISCVDatapath.vhd
+l0
+L6 1
+V4H9MV6f9gm]^7jgmm>If>0
+!s100 ;0fCaDZFg1nNB_]hD2DVA0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z122 DEx4 work 20 myfirstriscvdatapath 0 22 4H9MV6f9gm]^7jgmm>If>0
+!i122 71
+l56
+Z123 L20 48
+Z124 VdLL`Jlzd4[I2eS1nHeUMK0
+Z125 !s100 XS5jI<4c`V?5?@EI[]0MJ1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emysecondriscvdatapath
+Z126 w1759715038
+R85
+R13
+R14
+!i122 71
+R4
+Z127 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd
+Z128 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/MySecondRISCVDatapath.vhd
+l0
+L5 1
+V091GP?>XEM64>kzZDSO]f0
+!s100 B05WJeTkNhTGB?j@ki3Rj1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R85
+R13
+R14
+Z129 DEx4 work 21 mysecondriscvdatapath 0 22 091GP?>XEM64>kzZDSO]f0
+!i122 71
+l93
+Z130 L25 91
+Z131 V7YgfEDnU;[5ljb=_0QAS?1
+Z132 !s100 C1N<d;RFmYl3GMSP@XDHd2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+En_bit_register
+Z133 w1757523024
+R13
+R14
+!i122 71
+R4
+Z134 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd
+Z135 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Register.vhd
+l0
+L6 1
+V[3cNc[=8RAcV2Va^9Z`U_3
+!s100 ?_=^c4LgUEzQU@^Z3>Bd73
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z136 DEx4 work 14 n_bit_register 0 22 [3cNc[=8RAcV2Va^9Z`U_3
+!i122 71
+l28
+Z137 L16 20
+Z138 V3M9gRWkBk`2cH9gcaQ:6]3
+Z139 !s100 D[QPd5>LknZIK<WAH_4M_1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+En_bit_ripple_adder_struc
+Z140 w1757372249
+R13
+R14
+!i122 71
+R4
+Z141 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd
+Z142 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/N_bit_Ripple_Adder_STRUC.vhd
+l0
+L6 1
+VFCDeoYGB^IJQ^9PnDW4V`2
+!s100 De@dZ1>_8jHcYB?<B9H;Z2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z143 DEx4 work 24 n_bit_ripple_adder_struc 0 22 FCDeoYGB^IJQ^9PnDW4V`2
+!i122 71
+l30
+Z144 L18 38
+Z145 VFnId4zQDaPbjPVi1DLb;10
+Z146 !s100 K:@`dH=PPWNY8a7g3oE1=0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eonescomp_n
+Z147 w1757366096
+R13
+R14
+!i122 71
+R4
+Z148 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd
+Z149 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/onescomp_N.vhd
+l0
+L18 1
+V;@9MFbh8lbgIYfn@T8OPg0
+!s100 QkR1VBzXlBdW5XOT=g0`:0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z150 DEx4 work 10 onescomp_n 0 22 ;@9MFbh8lbgIYfn@T8OPg0
+!i122 71
+l32
+Z151 L25 17
+Z152 VYa86[XNFUa>3`IA4Q8R=;0
+Z153 !s100 _HJV2giJ54dV2b8]od82Q2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eorg2
+R35
+R13
+R14
+!i122 71
+R4
+Z154 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd
+Z155 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/org2.vhd
+l0
+R38
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z156 DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 71
+l32
+R40
+Z157 VNHGn>Kh:]BEh4o]ImiG<d3
+Z158 !s100 h5_AzR3TdRA0a_K=dQ>mI2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eregister_file
+Z159 w1758585135
+R13
+R14
+!i122 71
+R4
+Z160 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd
+Z161 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/Register_File.vhd
+l0
+L6 1
+VzWm67_0:l81mZJUoD2NIo3
+!s100 HSY]bkgKhKgH[nMQ3L95^1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R13
+R14
+Z162 DEx4 work 13 register_file 0 22 zWm67_0:l81mZJUoD2NIo3
+!i122 71
+l82
+Z163 L19 153
+Z164 Vo^fa:9:YM<Ob@PD7Rncc_1
+Z165 !s100 aQ?C4BNebkANmX0JhI4AI0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_dmem
+Z166 w1759449735
+Z167 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R13
+R14
+!i122 71
+R4
+Z168 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd
+Z169 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_dmem.vhd
+l0
+Z170 L10 1
+VC[Vo?z<8WJSIWY^CJoO]J0
+!s100 EiYZzFP9ma5e0GZSN?PoM3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R167
+R13
+R14
+Z171 DEx4 work 7 tb_dmem 0 22 C[Vo?z<8WJSIWY^CJoO]J0
+!i122 71
+l51
+Z172 L16 238
+Z173 VTXPMEJSk7T>ZOAQf^oES^2
+Z174 !s100 nmcFm8LiiC``[OBga540Z3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_extender16t32
+Z175 w1740374394
+R167
+R13
+R14
+!i122 38
+R4
+Z176 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_16t32.vhd
+Z177 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_16t32.vhd
+l0
+R170
+V8?m5mhP_[nTSgj<R[^Fgn1
+!s100 Gm]Aff1Kajn3;W2MIcOfz2
+R17
+32
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R22
+R23
+Amixed
+R167
+R13
+R14
+DEx4 work 16 tb_extender16t32 0 22 8?m5mhP_[nTSgj<R[^Fgn1
+!i122 38
+l44
+L15 107
+VY0YYl69J^IjI]GR;cZl6c3
+!s100 <gmKCO7KkcM@@]Rl2lkg[3
+R17
+32
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 0
+R22
+R23
+Etb_extender_12t32
+Z178 w1759710985
+R167
+R13
+R14
+!i122 71
+R4
+Z179 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_12t32.vhd
+Z180 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_extender_12t32.vhd
+l0
+R170
+VXFgBWln^RDBf^j1c87AB]0
+!s100 L4QgjefoOJ?b7IkIUzXFB1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R167
+R13
+R14
+Z181 DEx4 work 17 tb_extender_12t32 0 22 XFgBWln^RDBf^j1c87AB]0
+!i122 71
+l42
+Z182 L15 110
+Z183 VW@Se]9ZaQV3izK6dHEVkc3
+Z184 !s100 zNX]lCK97GD^5Nm1=26K`0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_myfirstriscvdatapath
+Z185 w1758755834
+R167
+R13
+R14
+!i122 71
+R4
+Z186 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd
+Z187 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MyFirstRISCVDatapath.vhd
+l0
+R170
+V80h2?n8X1Cb?TFz:4@Elo3
+!s100 KbZOIgC8>dQZ[Dh7l1K?11
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R167
+R13
+R14
+Z188 DEx4 work 23 tb_myfirstriscvdatapath 0 22 80h2?n8X1Cb?TFz:4@Elo3
+!i122 71
+l53
+Z189 L15 381
+Z190 VSV^;aQfXb8Y4=znMfGe=b0
+Z191 !s100 LFQHF0_;GgSKWz1B4`5^^1
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_mysecondriscvdatapath
+Z192 w1759725372
+R167
+R13
+R14
+!i122 71
+R4
+Z193 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd
+Z194 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/tb_MySecondRISCVDatapath.vhd
+l0
+R170
+VLY=WTU52Pkzm0kUR_cJC71
+!s100 bI13ZG7[6U<9[g9YESOXN3
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R167
+R13
+R14
+Z195 DEx4 work 24 tb_mysecondriscvdatapath 0 22 LY=WTU52Pkzm0kUR_cJC71
+!i122 71
+l65
+Z196 L15 455
+Z197 ViiLdFX0lmO<bc:z>gcHFI0
+Z198 !s100 kGeeU0Jmgh1U`f@>:J0al0
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Exorg2
+R35
+R13
+R14
+!i122 71
+R4
+Z199 8/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd
+Z200 F/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/xorg2.vhd
+l0
+R38
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+Z201 DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 71
+l32
+R40
+Z202 VbmLohbkYjJQ`?EHUY>LoL1
+Z203 !s100 Z6[FAPS4fBLB`F?OO<AY72
+R17
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23

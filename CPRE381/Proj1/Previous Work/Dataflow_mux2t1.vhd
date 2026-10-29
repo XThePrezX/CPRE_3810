@@ -1,0 +1,21 @@
+--Dataflow modeling describes the flow of data between components or signals. It defines how 
+--values are computed, typically using signal assignments to represent the flow of data directly
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Dataflow_mux2t1 is
+    Port ( i_D0 : in STD_LOGIC;
+           i_D1 : in STD_LOGIC;
+           i_S : in STD_LOGIC;
+           o_O : out STD_LOGIC);
+end Dataflow_mux2t1;
+
+architecture Dataflow of Dataflow_mux2t1 is
+begin
+    
+    o_O <= ((i_D0 AND (NOT i_S)) OR (i_D1 AND i_S));  --Output of multiplexer
+	--(i_D0 AND (NOT i_S)) OR 
+
+end Dataflow;

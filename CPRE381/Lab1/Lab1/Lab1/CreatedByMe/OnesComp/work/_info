@@ -1,0 +1,718 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp
+T_opt
+!s110 1738861149
+V?^E[G<[LQD21je=MKBf9:3
+04 17 5 work tb_oc_mux2t1_n_oc mixed 1
+=1-7486e2289a48-67a4ea5c-d1c26-1ff5
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+R2
+Eadder
+Z3 w1737085900
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 15
+R2
+Z7 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Adder.vhd
+Z8 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Adder.vhd
+l0
+Z9 L26 1
+VSjM4gi`5W^[R>0BUkBk440
+!s100 D7GUTT<S>Ij<;bm;`5=Z12
+Z10 OL;C;2024.2;79
+32
+Z11 !s110 1738862382
+!i10b 1
+Z12 !s108 1738862382.000000
+Z13 !s90 -reportprogress|300|-work|work|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/mux2t1_N.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/org2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Reg.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/RegLd.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/tb_mux2t1_N.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/xorg2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Adder.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/andg2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/invg.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Multiplier.vhd|
+Z14 !s107 /home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Multiplier.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/invg.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/andg2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Adder.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/xorg2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/tb_mux2t1_N.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/RegLd.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Reg.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/org2.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/mux2t1_N.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Abehavior
+R4
+R5
+R6
+DEx4 work 5 adder 0 22 SjM4gi`5W^[R>0BUkBk440
+!i122 15
+l40
+L39 11
+V`TJnZZh2A_n0I79;0:ETE1
+!s100 z]F]Ulo_Tema=Q<>RNE;Q0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Eandg2
+Z17 w1737080929
+R5
+R6
+!i122 15
+R2
+Z18 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/andg2.vhd
+Z19 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/andg2.vhd
+l0
+Z20 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 15
+l32
+Z21 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Edataflow_mux2t1
+Z22 w1738796477
+R4
+R5
+R6
+!i122 13
+R2
+Z23 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Dataflow_mux2t1.vhd
+Z24 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Dataflow_mux2t1.vhd
+l0
+L8 1
+Vj^z<GfGJVZYlbo_:DUnlK0
+!s100 MRR`?FXkV@^?4l99ZM1Uc3
+R10
+32
+Z25 !s110 1738862370
+!i10b 1
+Z26 !s108 1738862369.000000
+Z27 !s90 -reportprogress|300|-work|work|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Dataflow_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Structural_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Dataflow_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Structural_mux2t1.vhd|
+Z28 !s107 /home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Structural_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Dataflow_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Structural_mux2t1.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Dataflow_mux2t1.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R4
+R5
+R6
+DEx4 work 15 dataflow_mux2t1 0 22 j^z<GfGJVZYlbo_:DUnlK0
+!i122 13
+l16
+L15 7
+V>d5ST1<15hHaCdbWK5;OH2
+!s100 WVbh9Z?Pa@?<eUTAdZJKf2
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Einvg
+Z29 w1737080926
+R5
+R6
+!i122 15
+R2
+Z30 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/invg.vhd
+Z31 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/invg.vhd
+l0
+R20
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 15
+l31
+L30 6
+Vch>li:oKYZkCO5]GamViK1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Emultiplier
+Z32 w1737080818
+R4
+R5
+R6
+!i122 15
+R2
+Z33 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Multiplier.vhd
+Z34 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Multiplier.vhd
+l0
+R9
+VU2EKUMVUK]ZI;V2JVLQN30
+!s100 7X@Jko]<<Vj_GlPXZCnEf3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Abehavior
+R4
+R5
+R6
+DEx4 work 10 multiplier 0 22 U2EKUMVUK]ZI;V2JVLQN30
+!i122 15
+l38
+L37 11
+Vj1FVcBBz;R:>zO`gDGEm@3
+!s100 NZ_1jPD9^a_Gc254BDF0C1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Emux2t1_n
+Z35 w1738804339
+R5
+R6
+!i122 15
+R2
+Z36 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/mux2t1_N.vhd
+Z37 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/mux2t1_N.vhd
+l0
+Z38 L21 1
+V@D4G>6UE4AFQmB61>@CM92
+!s100 a8b75l9QH119Si`4JcQ1J0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Astructural
+R5
+R6
+DEx4 work 8 mux2t1_n 0 22 @D4G>6UE4AFQmB61>@CM92
+!i122 15
+l39
+L30 21
+V=[5O:oN>d:bS]RPUmJ<k02
+!s100 ;agTR9EjN;jP2CLQ;Zgm40
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Eoc_mux2t1_n_oc
+Z39 w1738863735
+R5
+R6
+!i122 24
+R2
+Z40 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/oc_mux2t1_N_OC.vhd
+Z41 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/oc_mux2t1_N_OC.vhd
+l0
+R38
+VzO3KFbL;=9g9z4CW=HFb;1
+!s100 3MK5`:Fef[Z>J0VOih:_;2
+R10
+32
+Z42 !s110 1738863747
+!i10b 1
+Z43 !s108 1738863747.000000
+Z44 !s90 -reportprogress|300|-work|work|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/oc_mux2t1_N_OC.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/tb_oc_mux2t1_N_OC.vhd|
+Z45 !s107 /home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/tb_oc_mux2t1_N_OC.vhd|/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/oc_mux2t1_N_OC.vhd|
+!i113 0
+R15
+R16
+Astructural
+R5
+R6
+DEx4 work 14 oc_mux2t1_n_oc 0 22 zO3KFbL;=9g9z4CW=HFb;1
+!i122 24
+l45
+Z46 L30 34
+Z47 Vl9HnidAIiJb8H6XO0J19b1
+Z48 !s100 4F>@S^4RE27[;0LgW>THz1
+R10
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R15
+R16
+Eorg2
+Z49 w1706115834
+R5
+R6
+!i122 15
+R2
+Z50 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/org2.vhd
+Z51 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/org2.vhd
+l0
+R20
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 15
+l32
+R21
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Ereg
+Z52 w1737081307
+R5
+R6
+!i122 15
+R2
+Z53 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Reg.vhd
+Z54 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/Reg.vhd
+l0
+R20
+VRGfm2iUSML=T9l5jF3U6`0
+!s100 [YR2K8dfC;91mFlo`2lkO2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Abehavior
+R5
+R6
+DEx4 work 3 reg 0 22 RGfm2iUSML=T9l5jF3U6`0
+!i122 15
+l34
+L33 11
+V_^G<g5I7F=PW8GdHgOjSc1
+!s100 nf[`4S9cGXRcE4GX;@:6^1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Eregld
+Z55 w1737081343
+R5
+R6
+!i122 15
+R2
+Z56 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/RegLd.vhd
+Z57 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/RegLd.vhd
+l0
+R20
+Vlf57CW[F:zYGCXdz@ZQmG2
+!s100 ikPXW34H>Yig3olobSE7c2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Abehavior
+R5
+R6
+DEx4 work 5 regld 0 22 lf57CW[F:zYGCXdz@ZQmG2
+!i122 15
+l37
+L34 19
+VURl5mgd[ab1feg<CSIIk]3
+!s100 IC8af?T7V5V4Kal8D0chZ1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Estructural_mux2t1
+Z58 w1738780394
+R5
+R6
+!i122 13
+R2
+Z59 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Structural_mux2t1.vhd
+Z60 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/Structural_mux2t1.vhd
+l0
+L8 1
+V1dZo7gO0;i1Mn;_5RiaWc1
+!s100 az:RdihC8FNgYXlZYZNk;0
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Astructural
+R5
+R6
+DEx4 work 17 structural_mux2t1 0 22 1dZo7gO0;i1Mn;_5RiaWc1
+!i122 13
+l36
+L15 36
+V=UZn[k2h_YH`=zY[NM4Jd3
+!s100 gP9BaFLmCd?zMOPoA;NMn2
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Etb_dataflow_mux2t1
+Z61 w1738796265
+Z62 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R5
+R6
+!i122 13
+R2
+Z63 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Dataflow_mux2t1.vhd
+Z64 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Dataflow_mux2t1.vhd
+l0
+Z65 L10 1
+V[OBO73BeWJcCU8TV2?R0m2
+!s100 ak4Z7aJ4nVS3_OnH]aCFz1
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Amixed
+R62
+R5
+R6
+DEx4 work 18 tb_dataflow_mux2t1 0 22 [OBO73BeWJcCU8TV2?R0m2
+!i122 13
+l40
+Z66 L15 108
+VW>^7?4Z=JS22k0?cfBGVM2
+!s100 S:V9EbCRLDWdT@g87SL]F3
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Etb_mux2t1_n
+Z67 w1738801827
+R62
+R5
+R6
+!i122 15
+R2
+Z68 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/tb_mux2t1_N.vhd
+Z69 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/tb_mux2t1_N.vhd
+l0
+R65
+V=oKannQjI[QdhC=iiRBkH2
+!s100 IBob4U]S5:koP9a_@JmjV3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Amixed
+R62
+R5
+R6
+DEx4 work 11 tb_mux2t1_n 0 22 =oKannQjI[QdhC=iiRBkH2
+!i122 15
+l43
+L15 101
+VFiF52Ocn7Z8G@NV6U?i1e3
+!s100 ]cTbECM[k@B78Dl79BfeJ3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Etb_oc_mux2t1_n_oc
+Z70 w1738863695
+R62
+R5
+R6
+!i122 24
+R2
+Z71 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/tb_oc_mux2t1_N_OC.vhd
+Z72 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/OnesComp/tb_oc_mux2t1_N_OC.vhd
+l0
+R65
+VkQkG01BP^GnE]AW2GRKE;2
+!s100 jR=k?d2f7SFDCkIbI:33E2
+R10
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R15
+R16
+Amixed
+R62
+R5
+R6
+Z73 DEx4 work 17 tb_oc_mux2t1_n_oc 0 22 kQkG01BP^GnE]AW2GRKE;2
+!i122 24
+l43
+Z74 L15 104
+Z75 VB<`?PTb=Oi@jVI[d?oaWM1
+Z76 !s100 P[HBdDUJ2Il01<fUz^gT@3
+R10
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R15
+R16
+Etb_structural_mux2t1
+Z77 w1738779666
+R62
+R5
+R6
+!i122 13
+R2
+Z78 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Structural_mux2t1.vhd
+Z79 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/CreatedByMe/Mux/tb_Structural_mux2t1.vhd
+l0
+R65
+V:FJ]BOEl?doefIABcXnII3
+!s100 TXAV5]Zje3gZc6`XiZO4W1
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Amixed
+R62
+R5
+R6
+DEx4 work 20 tb_structural_mux2t1 0 22 :FJ]BOEl?doefIABcXnII3
+!i122 13
+l40
+R66
+V^BZb`@CBP2V?61A3f=86`1
+!s100 dU67ZWoPjS_V2JcCER9P_1
+R10
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R15
+R16
+Exorg2
+R49
+R5
+R6
+!i122 15
+R2
+Z80 8/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/xorg2.vhd
+Z81 F/home/pgask26/cpre381/newCPRE381/Lab1/Lab1/Lab1/xorg2.vhd
+l0
+R20
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 15
+l32
+R21
+VbmLohbkYjJQ`?EHUY>LoL1
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16

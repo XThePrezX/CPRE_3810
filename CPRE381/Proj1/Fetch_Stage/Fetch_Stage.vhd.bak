@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------
+-- Joseph Zambreno
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- Adder.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains an implementation of a behavioral 
+-- signed adder operating on std_logic_vector inputs. 
+--
+--
+-- NOTES: For simplicity, we caslibrary IEEE;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity fetchStage is
+  port (
+    iClk          : in  std_logic;
+    iRst          : in  std_logic;
+
+    --Control signals
+    iBranch       : in  std_logic;
+    iBranchTaken  : in  std_logic;
+    iJump         : in  std_logic;
+    iJumpReg      : in  std_logic;
+
+    --Target addresses
+    iBranchTarget : in  std_logic_vector(31 downto 0);
+    iJumpTarget   : in  std_logic_vector(31 downto 0);
+    iJRTarget     : in  std_logic_vector(31 downto 0);
+
+    --Outputs
+    oPC           : out std_logic_vector(31 downto 0);
+    oPC_Plus4     : out std_logic_vector(31 downto 0)
+  );
+end fetchStage;
+
+architecture Behavioral of fetchStage is
+  signal rPC         : std_logic_vector(31 downto 0) := (others => '0');
+  signal wNextPC     : std_logic_vector(31 downto 0);
+  signal wPCPlus4    : std_logic_vector(31 downto 0);
+  signal wBranchMux  : std_logic_vector(31 downto 0);
+  signal wJumpMux    : std_logic_vector(31 downto 0);
+begin
+
+  --PC + 4 calculation
+  wPCPlus4 <= std_logic_vector(unsigned(rPC) + 4);
+  oPC_Plus4 <= wPCPlus4;
+
+  --Branch mux
+  wBranchMux <= wPCPlus4 when (iBranch = '0' or iBranchTaken = '0') else iBranchTarget;
+
+  --Jump mux
+  wJumpMux <= wBranchMux when iJump = '0' else iJumpTarget;
+
+  --JR mux
+  wNextPC <= wJumpMux when iJumpReg = '0' else iJRTarget;
+
+  --Register PC
+  process(iClk, iRst)
+  begin
+    if iRst = '1' then
+      rPC <= (others => '0');
+    elsif rising_edge(iClk) then
+      rPC <= wNextPC;
+    end if;
+  end process;
+
+  --Current PC output
+  oPC <= rPC;
+
+end Behavioral;
+

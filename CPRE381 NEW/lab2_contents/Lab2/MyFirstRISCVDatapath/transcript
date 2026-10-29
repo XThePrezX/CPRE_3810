@@ -1,0 +1,48 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vsim work.tb_myfirstriscvdatapath -voptargs=+acc
+# vsim work.tb_myfirstriscvdatapath -voptargs="+acc" 
+# Start time: 15:42:15 on Sep 30,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_myfirstriscvdatapath(mixed)#1
+# Loading work.myfirstriscvdatapath(structural)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1_data(dataflow)#1
+# Loading work.adder_subtractor(structural)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.n_bit_ripple_adder_struc(structural)#1
+# Loading work.adder_struc(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_myfirstriscvdatapath/s_rd \
+sim:/tb_myfirstriscvdatapath/s_rs1 \
+sim:/tb_myfirstriscvdatapath/s_rs2 \
+sim:/tb_myfirstriscvdatapath/s_Sum \
+sim:/tb_myfirstriscvdatapath/s_We
+run 500
+# End time: 15:45:49 on Sep 30,2025, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 0

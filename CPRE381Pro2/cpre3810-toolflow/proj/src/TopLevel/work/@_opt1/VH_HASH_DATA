@@ -1,0 +1,49 @@
+[N
+5
+3
+5 mixed
+2
+14 tb_fetch_logic
+1
+86 /home/pgask26/cpre381/CPRE381Pro1Repo/CPRE381/cpre3810-toolflow/proj/src/TopLevel/work
+5
+10 DATA_WIDTH
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+5
+0
+0
+8
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]

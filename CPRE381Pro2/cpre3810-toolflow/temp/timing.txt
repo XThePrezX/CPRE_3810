@@ -1,0 +1,53 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 36.44mhz Clk Constraint: 20.00ns Slack: -7.44ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : dffg_N:ID_EX_Reg|s_Q[33]
+ To Node      : Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:26:N_Register|s_Q
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.025      3.025  R        clock network delay
+      3.257      0.232     uTco  dffg_N:ID_EX_Reg|s_Q[33]
+      3.257      0.000 FF  CELL  ID_EX_Reg|s_Q[33]|q
+      4.399      1.142 FF    IC  mux2T1_32b|\G_NBit_MUX:4:MUXI|oo_O~0|datab
+      4.824      0.425 FF  CELL  mux2T1_32b|\G_NBit_MUX:4:MUXI|oo_O~0|combout
+      5.313      0.489 FF    IC  Alufile|MUXlast|\G_NBit_MUX:20:MUXI|oo_O~5|dataa
+      5.688      0.375 FR  CELL  Alufile|MUXlast|\G_NBit_MUX:20:MUXI|oo_O~5|combout
+      7.786      2.098 RR    IC  Alufile|MUXlast|\G_NBit_MUX:30:MUXI|oo_O~2|dataa
+     24.642     16.856 RR  LOOP  Alufile|MUXlast|\G_NBit_MUX:27:MUXI|oo_O~2|combout
+     25.710      1.068 RR    IC  fetch|Equal0~23|datab
+     26.128      0.418 RR  CELL  fetch|Equal0~23|combout
+     26.838      0.710 RR    IC  fetch|Equal0~24|datab
+     27.240      0.402 RR  CELL  fetch|Equal0~24|combout
+     27.475      0.235 RR    IC  fetch|Equal0~25|datab
+     27.893      0.418 RR  CELL  fetch|Equal0~25|combout
+     28.288      0.395 RR    IC  fetch|Equal0~27|datac
+     28.575      0.287 RR  CELL  fetch|Equal0~27|combout
+     29.681      1.106 RR    IC  fetch|PCIn[30]~27|datad
+     29.836      0.155 RR  CELL  fetch|PCIn[30]~27|combout
+     30.056      0.220 RR    IC  fetch|PCIn[26]~32|datac
+     30.343      0.287 RR  CELL  fetch|PCIn[26]~32|combout
+     30.343      0.000 RR    IC  fetch|Program_Counter|\N_Bit_reg:26:N_Register|s_Q|d
+     30.430      0.087 RR  CELL  Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:26:N_Register|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.961      2.961  R        clock network delay
+     22.993      0.032           clock pessimism removed
+     22.973     -0.020           clock uncertainty
+     22.991      0.018     uTsu  Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:26:N_Register|s_Q
+ Data Arrival Time  :    30.430
+ Data Required Time :    22.991
+ Slack              :    -7.439 (VIOLATED)
+ ===================================================================

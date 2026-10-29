@@ -1,0 +1,20 @@
+--Behavior describes the functionality of a system without specifying the exact hardware --structure or data flow. It focuses on what the design does rather than how it does it
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity PipelineRegisterUpdate is
+    Port ( i_Stall : in std_logic_vector(3 downto 0);
+ 	   i_Flush : in std_logic_vector(3 downto 0);
+           o_Stall : out std_logic_vector(3 downto 0);
+           o_Flush : out std_logic_vector(3 downto 0));
+end PipelineRegisterUpdate;
+
+architecture Behavioral of PipelineRegisterUpdate is
+begin
+    
+	o_Stall <= i_Stall;
+	o_Flush <= i_Flush;
+
+end Behavioral;
+

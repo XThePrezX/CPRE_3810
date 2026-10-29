@@ -1,0 +1,49 @@
+[N
+5
+3
+5 mixed
+2
+25 tb_pipelineregisterupdate
+5
+10 DATA_WIDTH
+1
+74 /home/pgask26/cpre381/CPRE381Pro3/cpre3810-toolflow/proj/src/TopLevel/work
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+5
+0
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]

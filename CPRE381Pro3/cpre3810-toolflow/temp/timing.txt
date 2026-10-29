@@ -1,0 +1,41 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 41.95mhz Clk Constraint: 20.00ns Slack: -3.84ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : dffg_N:ID_EX_Reg|s_Q[33]
+ To Node      : Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:9:N_Register|s_Q
+ Launch Clock : iCLK
+ Latch Clock  : iCLK
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+      0.000      0.000           launch edge time
+      3.106      3.106  R        clock network delay
+      3.338      0.232     uTco  dffg_N:ID_EX_Reg|s_Q[33]
+      3.338      0.000 FF  CELL  ID_EX_Reg|s_Q[33]|q
+      4.498      1.160 FF    IC  mux2T1_32b|\G_NBit_MUX:4:MUXI|oo_O~0|datab
+      4.891      0.393 FF  CELL  mux2T1_32b|\G_NBit_MUX:4:MUXI|oo_O~0|combout
+      5.563      0.672 FF    IC  Alufile|MUXlast|\G_NBit_MUX:2:MUXI|oo_O~7|datad
+      5.713      0.150 FR  CELL  Alufile|MUXlast|\G_NBit_MUX:2:MUXI|oo_O~7|combout
+      8.673      2.960 RR    IC  Alufile|MUXlast|\G_NBit_MUX:12:MUXI|oo_O|datab
+     22.926     14.253 RR  LOOP  Alufile|MUXlast|\G_NBit_MUX:9:MUXI|oo_O|combout
+     26.388      3.462 RR    IC  fetch|Program_Counter|\N_Bit_reg:9:N_Register|s_Q|asdata
+     26.794      0.406 RR  CELL  Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:9:N_Register|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     20.000     20.000           latch edge time
+     22.952      2.952  R        clock network delay
+     22.960      0.008           clock pessimism removed
+     22.940     -0.020           clock uncertainty
+     22.958      0.018     uTsu  Fetch_Logic:fetch|N_bit_Register:Program_Counter|dffg:\N_Bit_reg:9:N_Register|s_Q
+ Data Arrival Time  :    26.794
+ Data Required Time :    22.958
+ Slack              :    -3.836 (VIOLATED)
+ ===================================================================

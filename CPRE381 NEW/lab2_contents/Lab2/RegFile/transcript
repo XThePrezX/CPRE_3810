@@ -1,0 +1,1113 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:36:55 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(76): near "std_logic_vector": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(77): (vcom-1136) Unknown identifier "word_t".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1136) Unknown identifier "N".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1591) Bad expression in right bound of range expression.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): Cannot resolve expression type.
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1147) Range in parameter specification of FOR GENERATE must be static.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(88): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(94): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(95): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(96): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(97): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(98): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(99): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(100): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(101): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(102): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(103): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(104): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(105): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(106): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(107): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(108): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(109): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(110): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(111): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(112): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(113): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(114): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(115): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(116): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(117): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(118): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(119): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(120): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(121): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(122): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(123): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(124): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(125): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(132): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(133): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(134): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(135): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(136): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(137): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(138): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(139): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(140): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(141): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(142): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(143): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(144): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(145): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(146): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(147): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(148): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(149): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(150): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(151): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(152): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(153): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(154): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(155): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(156): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(157): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(158): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(159): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(160): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(161): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(162): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(163): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(169): VHDL Compiler exiting
+# End time: 17:36:55 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 70, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:38:59 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(76): near "STD_LOGIC_VECTOR": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(77): (vcom-1136) Unknown identifier "word_t".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1136) Unknown identifier "N".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1591) Bad expression in right bound of range expression.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): Cannot resolve expression type.
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1147) Range in parameter specification of FOR GENERATE must be static.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(88): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(94): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(95): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(96): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(97): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(98): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(99): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(100): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(101): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(102): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(103): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(104): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(105): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(106): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(107): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(108): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(109): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(110): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(111): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(112): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(113): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(114): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(115): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(116): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(117): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(118): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(119): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(120): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(121): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(122): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(123): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(124): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(125): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(132): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(133): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(134): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(135): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(136): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(137): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(138): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(139): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(140): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(141): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(142): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(143): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(144): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(145): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(146): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(147): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(148): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(149): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(150): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(151): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(152): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(153): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(154): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(155): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(156): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(157): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(158): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(159): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(160): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(161): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(162): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(163): Cannot resolve indexed name (type (error)) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(169): VHDL Compiler exiting
+# End time: 17:38:59 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 70, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:40:25 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1136) Unknown identifier "N".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1591) Bad expression in right bound of range expression.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): Cannot resolve expression type.
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1147) Range in parameter specification of FOR GENERATE must be static.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(169): VHDL Compiler exiting
+# End time: 17:40:25 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:40:49 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# End time: 17:40:49 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:56:01 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:56:01 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:56:34 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Error (suppressible): /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): (vcom-1272) Length of expected is 5; length of actual is 8.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:56:34 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:58:01 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): near "'": syntax error
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(60): (vcom-1136) Unknown identifier "s_rs1".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(61): (vcom-1136) Unknown identifier "s_rs2".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(62): (vcom-1136) Unknown identifier "s_rd".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:58:01 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:58:03 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): near "'": syntax error
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(60): (vcom-1136) Unknown identifier "s_rs1".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(61): (vcom-1136) Unknown identifier "s_rs2".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(62): (vcom-1136) Unknown identifier "s_rd".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:58:03 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:58:35 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): near "'": syntax error
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(60): (vcom-1136) Unknown identifier "s_rs1".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(61): (vcom-1136) Unknown identifier "s_rs2".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(62): (vcom-1136) Unknown identifier "s_rd".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:58:36 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 18, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 17:59:09 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(41): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(42): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(43): near "'": syntax error
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(60): (vcom-1136) Unknown identifier "s_rs1".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(61): (vcom-1136) Unknown identifier "s_rs2".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(62): (vcom-1136) Unknown identifier "s_rd".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): Illegal target for signal assignment.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 17:59:09 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:00:49 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(101): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(102): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(103): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(112): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(113): near "'": syntax error
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(114): near "'": syntax error
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(125): VHDL Compiler exiting
+# End time: 18:00:50 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:01:29 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd(55): (vcom-1624) Component instance tb_Register_File(mixed).DUT0 has a generic map clause and the component Register_File has no generics.
+# Generic map will be ignored.
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Compiling entity tb_bit32_32_1Mux
+# -- Compiling architecture mixed of tb_bit32_32_1Mux
+# -- Compiling entity tb_DF_5to32_Decoder
+# -- Compiling architecture mixed of tb_DF_5to32_Decoder
+# End time: 18:01:30 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:02:08 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Compiling entity tb_bit32_32_1Mux
+# -- Compiling architecture mixed of tb_bit32_32_1Mux
+# -- Compiling entity tb_DF_5to32_Decoder
+# -- Compiling architecture mixed of tb_DF_5to32_Decoder
+# End time: 18:02:08 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_register_file -voptargs=+acc
+# vsim work.tb_register_file -voptargs="+acc" 
+# Start time: 18:02:27 on Sep 22,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+add wave -position insertpoint  \
+sim:/tb_register_file/s_Data \
+sim:/tb_register_file/s_Data1 \
+sim:/tb_register_file/s_Data2 \
+sim:/tb_register_file/s_rd \
+sim:/tb_register_file/s_rs1 \
+sim:/tb_register_file/s_rs2 \
+sim:/tb_register_file/s_We
+run 500
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:08:01 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity tb_DF_5to32_Decoder
+# -- Compiling architecture mixed of tb_DF_5to32_Decoder
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Compiling entity tb_bit32_32_1Mux
+# -- Compiling architecture mixed of tb_bit32_32_1Mux
+# End time: 18:08:01 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:09:42 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity tb_DF_5to32_Decoder
+# -- Compiling architecture mixed of tb_DF_5to32_Decoder
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd(23): (vcom-1615) Existing entity 'dffg' at line 23 will be overwritten.
+# -- Compiling entity dffg
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd(33): (vcom-1615) Existing architecture 'dffg(mixed)' at line 33 will be overwritten.
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Compiling entity tb_bit32_32_1Mux
+# -- Compiling architecture mixed of tb_bit32_32_1Mux
+# End time: 18:09:42 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:09:43 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/bit32_32_1Mux.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_DF_5to32_Decoder.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_bit32_32_1Mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bit32_32_1Mux
+# -- Compiling architecture Dataflow of bit32_32_1Mux
+# -- Compiling entity DF_5to32_Decoder
+# -- Compiling architecture Dataflow of DF_5to32_Decoder
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity tb_DF_5to32_Decoder
+# -- Compiling architecture mixed of tb_DF_5to32_Decoder
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd(23): (vcom-1615) Existing entity 'dffg' at line 23 will be overwritten.
+# -- Compiling entity dffg
+# ** Warning: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/dffg.vhd(33): (vcom-1615) Existing architecture 'dffg(mixed)' at line 33 will be overwritten.
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Compiling entity tb_bit32_32_1Mux
+# -- Compiling architecture mixed of tb_bit32_32_1Mux
+# End time: 18:09:43 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:10:08 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:10:08 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:10:09 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:10:09 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:12:29 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:12:30 on Sep 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:14:14 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:14:14 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+add wave -position insertpoint  \
+sim:/tb_register_file/reset
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:14:44 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:14:44 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:15:20 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:15:20 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:15:21 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:15:21 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:16:22 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_N_bit_Register
+# -- Compiling architecture mixed of tb_N_bit_Register
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:16:22 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:19:13 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:19:13 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+add wave -position insertpoint  \
+sim:/tb_register_file/s_rst
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:21:00 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:21:00 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:34:31 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(88): Constant "i" is type std.STANDARD.INTEGER; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(88): near "!": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(92): VHDL Compiler exiting
+# End time: 18:34:31 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:37:26 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_N_bit_Register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(89): Constant "i" is type std.STANDARD.INTEGER; expecting type std.STANDARD.BOOLEAN.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(89): near "!": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(93): VHDL Compiler exiting
+# End time: 18:37:26 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:39:36 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(89): Illegal concurrent statement.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(92): Symbol "N_Register" has already been declared in this region.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(92): (vcom-1454) Formal "Q" of mode OUT cannot be associated with an expression.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(175): VHDL Compiler exiting
+# End time: 18:39:36 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:40:00 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(89): Illegal concurrent statement.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(92): Symbol "N_Register" has already been declared in this region.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(92): (vcom-1454) Formal "Q" of mode OUT cannot be associated with an expression.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(175): VHDL Compiler exiting
+# End time: 18:40:00 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:45:42 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/N_bit_Register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# -- Compiling entity N_bit_Register
+# -- Compiling architecture Structural of N_bit_Register
+# End time: 18:45:42 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+# Load canceled
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd} {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:46:06 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:46:06 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run 500
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:49:16 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1450) Actual (indexed name) for formal "WrEnable" is not a static signal name.
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1136) Unknown identifier "i".
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1454) Formal "Q" of mode OUT cannot be associated with an expression.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(171): VHDL Compiler exiting
+# End time: 18:49:16 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:49:44 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# ** Error: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(86): (vcom-1454) Formal "Q" of mode OUT cannot be associated with an expression.
+# ** Note: /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd(171): VHDL Compiler exiting
+# End time: 18:49:44 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:52:22 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# End time: 18:52:22 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:52:42 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Register_File
+# -- Compiling architecture Structural of Register_File
+# End time: 18:52:42 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 18:53:04 on Sep 22,2025
+# vcom -reportprogress 300 -work work /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/RegFile/tb_Register_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity tb_Register_File
+# -- Compiling architecture mixed of tb_Register_File
+# End time: 18:53:04 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_register_file(mixed)#1
+# Loading work.register_file(structural)#1
+# Loading work.df_5to32_decoder(dataflow)#1
+# Loading work.n_bit_register(structural)#1
+# Loading work.dffg(mixed)#1
+# Loading work.bit32_32_1mux(dataflow)#1
+run 500
+# End time: 18:56:55 on Sep 22,2025, Elapsed time: 0:54:28
+# Errors: 0, Warnings: 1

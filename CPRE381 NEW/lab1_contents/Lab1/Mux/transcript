@@ -1,0 +1,34 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vsim work.tb_mux2t1_n -voptargs=+acc
+# vsim work.tb_mux2t1_n -voptargs="+acc" 
+# Start time: 14:14:36 on Oct 10,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_mux2t1_n(mixed)#1
+# ** Warning: (vsim-3473) Component instance "DUT0 : mux2t1_N" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mux2t1_n File: /home/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Mux/tb_mux2t1_N.vhd
+add wave -position insertpoint  \
+sim:/tb_mux2t1_n/s_i_D0 \
+sim:/tb_mux2t1_n/s_i_D1 \
+sim:/tb_mux2t1_n/s_i_S \
+sim:/tb_mux2t1_n/s_o_O
+run 500
+quit -sim
+# End time: 14:15:51 on Oct 10,2025, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 1

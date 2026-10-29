@@ -1,0 +1,98 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+cd {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1}
+vlib work
+vcom -reportprogress 300 -work work {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 10:55:04 on Aug 27,2025
+# vcom -reportprogress 300 -work work /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd 
+# -- Loading package STANDARD
+# ** Warning: (vcom-3) System call 'chmod' failed.
+# Operation not supported. (errno = 95)
+# ** Warning: (vcom-3) System call 'chmod' failed.
+# Operation not supported. (errno = 95)
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 10:55:05 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/andg2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/invg.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Multiplier.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/mux2t1_N.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/org2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/xorg2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/RegLd.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Reg.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/tb_TPU_MV_Element.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 10:55:37 on Aug 27,2025
+# vcom -reportprogress 300 -work work /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/andg2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/invg.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Multiplier.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/mux2t1_N.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/org2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/xorg2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/RegLd.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Reg.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/tb_TPU_MV_Element.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# -- Compiling entity TPU_MV_Element
+# -- Compiling architecture structure of TPU_MV_Element
+# ** Error: /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd(131): near "g_Add1": (vcom-1576) expecting ';'.
+# ** Note: /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd(141): VHDL Compiler exiting
+# End time: 10:55:38 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/andg2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/invg.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Multiplier.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/mux2t1_N.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/org2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/xorg2.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Reg.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/RegLd.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/tb_TPU_MV_Element.vhd} {/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd}
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 10:58:32 on Aug 27,2025
+# vcom -reportprogress 300 -work work /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Adder.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/andg2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/invg.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Multiplier.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/mux2t1_N.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/org2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/xorg2.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/Reg.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/RegLd.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/tb_TPU_MV_Element.vhd /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# ** Warning: /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/tb_TPU_MV_Element.vhd(18): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Compiling entity tb_TPU_MV_Element
+# -- Compiling architecture mixed of tb_TPU_MV_Element
+# -- Compiling entity TPU_MV_Element
+# -- Compiling architecture structure of TPU_MV_Element
+# ** Error: /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd(131): near "g_Add1": (vcom-1576) expecting ';'.
+# ** Note: /run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd(141): VHDL Compiler exiting
+# End time: 10:58:33 on Aug 27,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# error copying "/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd" to "/run/user/440427/gvfs/smb-share:server=my.docs.iastate.edu,share=users/pgask26/cpre381/CPRE381 NEW/lab1_contents/Lab1/TPU_MV_Element.vhd.bak": operation not supported

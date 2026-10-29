@@ -1,0 +1,202 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_textio.all;  -- For logic types I/O
+library std;
+--use std.env.all;                -- For hierarchical/external signals
+use std.textio.all;             -- For basic I/O
+
+-- Usually name your testbench similar to below for clarity tb_<name>
+-- TODO: change all instances of tb_PipelineRegisterUpdate to reflect the new testbench.
+entity tb_PipelineRegisterUpdate is
+  generic(gCLK_HPER   : time := 10 ns;
+          DATA_WIDTH  : integer := 32);   -- Generic for half of the clock cycle period
+end tb_PipelineRegisterUpdate;
+
+architecture mixed of tb_PipelineRegisterUpdate is
+
+-- Define the total clock period time
+constant cCLK_PER  : time := gCLK_HPER * 2;
+
+-- We will be instantiating our design under test (DUT), so we need to specify its
+-- component interface.
+-- TODO: change component declaration as needed.
+component PipelineRegisterUpdate is
+
+    Port ( i_Stall : in std_logic_vector(3 downto 0);
+ 	   i_Flush : in std_logic_vector(3 downto 0);
+           o_Stall : out std_logic_vector(3 downto 0);
+           o_Flush : out std_logic_vector(3 downto 0));
+
+end component;
+
+component dffg_N is
+
+  generic(
+    N : integer := 32
+  );
+  port(i_CLK        : in std_logic; --Clock input
+       i_RST        : in std_logic; --Reset input
+       i_WE         : in std_logic; --Write enable input (Stall)
+       i_Flush         : in std_logic; --Write enable input (Flush)
+       i_D          : in std_logic_vector(N-1 downto 0); --Data value input
+       o_Q          : out std_logic_vector(N-1 downto 0)); --Data value output
+
+end component;
+
+-- Create signals for all of the inputs and outputs of the file that you are testing
+-- := '0' or := (others => '0') just make all the signals start at an initial value of zero
+signal CLK, reset : std_logic := '0';
+
+-- TODO: change input and output signals as needed.
+signal Stall   : std_logic_vector(3 downto 0);
+signal Flush   : std_logic_vector(3 downto 0);
+signal Data : std_logic_vector(31 downto 0);
+signal Output   : std_logic_vector(31 downto 0);
+
+signal Data1 : std_logic_vector(31 downto 0);
+signal Data2 : std_logic_vector(31 downto 0);
+signal Data3 : std_logic_vector(31 downto 0);
+signal Data4 : std_logic_vector(31 downto 0);
+
+signal i_StallMAIN : std_logic_vector(3 downto 0)  := "0000";
+signal i_FlushMAIN : std_logic_vector(3 downto 0)  := "0000";
+signal i_DMAIN : std_logic_vector(31 downto 0)  := x"00000000";
+signal o_QMAIN : std_logic_vector(31 downto 0);
+
+begin
+
+  -- TODO: Actually instantiate the component to test and wire all signals to the corresponding
+  -- input or output. Note that DUT0 is just the name of the instance that can be seen 
+  -- during simulation. What follows DUT0 is the entity name that will be used to find
+  -- the appropriate library component during simulation loading.
+  DUT0: PipelineRegisterUpdate
+  --generic map (N => DATA_WIDTH)
+  port map(
+            i_Stall     => i_StallMAIN,
+            i_Flush       => i_FlushMAIN,
+            o_Stall       => Stall,
+            o_Flush     => Flush);
+
+  Register1: dffg_N
+  generic map (N => 32)
+  port map(
+            i_CLK     => CLK,
+            i_RST       => reset,
+	    i_WE  => Stall(0),
+            i_Flush       => Flush(0),
+            i_D     => i_DMAIN,
+            o_Q     => Data1);
+
+  Register2: dffg_N
+  generic map (N => 32)
+  port map(
+            i_CLK     => CLK,
+            i_RST       => reset,
+	    i_WE  => Stall(1),
+            i_Flush       => Flush(1),
+            i_D     => Data1,
+            o_Q     => Data2);
+
+  Register3: dffg_N
+  generic map (N => 32)
+  port map(
+            i_CLK     => CLK,
+            i_RST       => reset,
+	    i_WE  => Stall(2),
+            i_Flush       => Flush(2),
+            i_D     => Data2,
+            o_Q     => Data3);
+
+  Register14: dffg_N
+  generic map (N => 32)
+  port map(
+            i_CLK     => CLK,
+            i_RST       => reset,
+	    i_WE  => Stall(3),
+            i_Flush       => Flush(3),
+            i_D     => Data3,
+            o_Q     => o_QMAIN);
+
+
+  --You can also do the above port map in one line using the below format: http://www.ics.uci.edu/~jmoorkan/vhdlref/compinst.html
+
+  
+  --This first process is to setup the clock for the test bench
+  P_CLK: process
+  begin
+    CLK <= '1';         -- clock starts at 1
+    wait for gCLK_HPER; -- after half a cycle
+    CLK <= '0';         -- clock becomes a 0 (negative edge)
+    wait for gCLK_HPER; -- after half a cycle, process begins evaluation again
+  end process;
+
+  -- This process resets the sequential components of the design.
+  -- It is held to be 1 across both the negative and positive edges of the clock
+  -- so it works regardless of whether the design uses synchronous (pos or neg edge)
+  -- or asynchronous resets.
+  P_RST: process
+  begin
+  	reset <= '0';   
+    wait for gCLK_HPER/2;
+	reset <= '1';
+    wait for gCLK_HPER*2;
+	reset <= '0';
+	wait;
+  end process;  
+  
+  -- Assign inputs for each test case.
+  -- TODO: add test cases as needed.
+  P_TEST_CASES: process
+  begin
+    wait for gCLK_HPER/2; -- for waveform clarity, I prefer not to change inputs on clk edges
+
+    -- Test case 1
+    i_StallMAIN   <= "0000"; 
+    i_FlushMAIN   <= "0000"; 
+    i_DMAIN   <= x"00000000"; 
+    reset   <= '1'; 
+    wait for gCLK_HPER*10;
+    -- Expect: 
+
+    -- Test case 2
+    reset   <= '0'; 
+    wait for gCLK_HPER*10;
+    -- Expect: 
+
+    -- Test case 3
+    i_StallMAIN   <= "1111"; 
+    i_FlushMAIN   <= "0000"; 
+    i_DMAIN   <= x"00000001"; 
+    wait for gCLK_HPER*10;
+    -- Expect: 
+
+    i_DMAIN   <= x"00000002"; 
+    wait for gCLK_HPER*10;
+
+    i_StallMAIN   <= "0101"; 
+    i_DMAIN   <= x"00000003"; 
+    wait for gCLK_HPER*10;
+
+    i_FlushMAIN   <= "0100"; 
+    i_DMAIN   <= x"00000004"; 
+    wait for gCLK_HPER*10;
+
+    i_DMAIN   <= x"00000005"; 
+    wait for gCLK_HPER*10;
+
+    i_DMAIN   <= x"00000006"; 
+    wait for gCLK_HPER*10;
+
+    i_DMAIN   <= x"00000007"; 
+    wait for gCLK_HPER*10;
+
+    i_DMAIN   <= x"00000008"; 
+    wait for gCLK_HPER*10;
+
+    i_DMAIN   <= x"00000009"; 
+    wait for gCLK_HPER*10;
+
+    wait;
+  end process;
+
+end mixed;

@@ -1,0 +1,564 @@
+-------------------------------------------------------------------------
+-- Henry Duwe
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- RISCV_Processor.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a skeleton of a RISCV_Processor  
+-- implementation.
+
+-- 01/29/2019 by H3::Design created.
+-- 04/10/2025 by AP::Coverted to RISC-V.
+-------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+library work;
+use work.RISCV_types.all;
+
+entity RISCV_Processor is
+  generic(N : integer := DATA_WIDTH);
+  port(iCLK            : in std_logic;
+       iRST            : in std_logic;
+       iInstLd         : in std_logic;
+       iInstAddr       : in std_logic_vector(N-1 downto 0);
+       iInstExt        : in std_logic_vector(N-1 downto 0);
+       oALUOut         : out std_logic_vector(N-1 downto 0)); -- TODO: Hook this up to the output of the ALU. It is important for synthesis that you have this output that can effectively be impacted by all other components so they are not optimized away.
+
+end  RISCV_Processor;
+
+
+architecture structure of RISCV_Processor is
+
+  -- Required data memory signals
+  signal s_DMemWr       : std_logic; -- TODO: use this signal as the final active high data memory write enable signal
+  signal s_DMemAddr     : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory address input
+  signal s_DMemData     : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory data input
+  signal s_DMemOut      : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the data memory output
+ 
+  -- Required register file signals 
+  signal s_RegWr        : std_logic; -- TODO: use this signal as the final active high write enable input to the register file
+  signal s_RegWrAddr    : std_logic_vector(4 downto 0); -- TODO: use this signal as the final destination register address input
+  signal s_RegWrData    : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory data input
+
+  -- Required instruction memory signals
+  signal s_IMemAddr     : std_logic_vector(N-1 downto 0); -- Do not assign this signal, assign to s_NextInstAddr instead
+  signal s_NextInstAddr : std_logic_vector(N-1 downto 0); -- TODO: use this signal as your intended final instruction memory address input.
+  signal s_Inst         : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the instruction signal 
+
+  -- Required halt signal -- for simulation
+  signal s_Halt         : std_logic;  -- TODO: this signal indicates to the simulation that intended program execution has completed. (Use WFI with Opcode: 111 0011)
+
+  -- Required overflow signal -- for overflow exception detection
+  signal s_Ovfl         : std_logic;  -- TODO: this signal indicates an overflow exception would have been initiated
+
+  component mem is
+    generic(ADDR_WIDTH : integer;
+            DATA_WIDTH : integer);
+    port(
+          clk          : in std_logic;
+          addr         : in std_logic_vector((ADDR_WIDTH-1) downto 0);
+          data         : in std_logic_vector((DATA_WIDTH-1) downto 0);
+          we           : in std_logic := '1';
+          q            : out std_logic_vector((DATA_WIDTH -1) downto 0));
+    end component;
+
+  -- TODO: You may add any additional signals or components your implementation 
+  --       requires below this comment
+
+    component mux2t1_N --N-bit 2:1 mux
+  generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+  port(i_S          : in std_logic;
+       i_D0         : in std_logic_vector(N-1 downto 0);
+       i_D1         : in std_logic_vector(N-1 downto 0);
+       o_O          : out std_logic_vector(N-1 downto 0));
+    end component;
+
+    component extender_12t32 --DONT FORGET REWORK THE EXTENDER ITS WRONG
+  port(
+    ivalue : in  std_logic_vector(31 downto 0);  
+    immType : in  std_logic_vector(2 downto 0);  
+    ovalue : out std_logic_vector(31 downto 0)   --sign-extended
+  );
+    end component;
+
+    component Register_File --Register file
+    Port ( rs1 : in STD_LOGIC_VECTOR(4 downto 0); --Register to read
+           rs2 : in STD_LOGIC_VECTOR(4 downto 0); --Register to read
+           rd : in STD_LOGIC_VECTOR(4 downto 0); --Register to write to
+           Clk : in STD_LOGIC;
+           Data : in STD_LOGIC_VECTOR(31 downto 0); --Data to be written
+           We : in STD_LOGIC; --Enable if writing
+           Reset : in STD_LOGIC;
+           Data1 : out STD_LOGIC_VECTOR(31 downto 0);
+           Data2 : out STD_LOGIC_VECTOR(31 downto 0));
+    end component;
+
+    component Adder_Subtractor
+generic(N : integer := 32);
+    Port ( A : in std_logic_vector(N-1 downto 0);
+           B : in std_logic_vector(N-1 downto 0);
+           nAdd_Sub : in STD_LOGIC;
+           Sum : out std_logic_vector(N-1 downto 0);
+           Cout : out STD_LOGIC);
+    end component;
+
+    component Fetch_Logic --Fetch logic
+    Port ( enablePCtoWrite : in STD_LOGIC;
+	   Clk : in STD_LOGIC;
+           Rst : in STD_LOGIC;
+           Opcode : in STD_LOGIC_VECTOR(6 downto 0);
+           InputData : in STD_LOGIC_VECTOR(31 downto 0);
+           Immi : in STD_LOGIC_VECTOR(31 downto 0);
+           PRSrc : in STD_LOGIC;
+           ALUOutORPC : in STD_LOGIC;
+           ALUOut : in STD_LOGIC_VECTOR(31 downto 0);
+           incBy4 : out STD_LOGIC_VECTOR(31 downto 0);
+           NextInstAddress : out STD_LOGIC_VECTOR(31 downto 0));
+    end component;
+
+    component ALU
+    Port ( DoSLTU : in STD_LOGIC;
+	   A : in std_logic_vector(31 downto 0);
+           B : in std_logic_vector(31 downto 0);
+           ALUControl : in std_logic_vector(3 downto 0);
+           Overflow : out STD_LOGIC;
+           Zero : out STD_LOGIC;
+           ALUOut : out std_logic_vector(31 downto 0));
+    end component;
+
+    component Control_Logic --Control logic
+    Port ( Opcode : in std_logic_vector(6 downto 0);
+ 	   funct7 : in std_logic_vector(6 downto 0);
+ 	   funct3 : in std_logic_vector(2 downto 0);
+           Branch : out STD_LOGIC;
+           ALUSrc : out STD_LOGIC;
+           ALUControl : out std_logic_vector(3 downto 0);
+           ImmType : out std_logic_vector(2 downto 0);
+           ResultSrc : out STD_LOGIC;
+           MemWrite : out STD_LOGIC;
+           PCSrc : out STD_LOGIC; -- if 0 do normal, if 1 branch
+           RegDst : out STD_LOGIC;
+           Halt : out STD_LOGIC;
+           WritePCORResultSrc : out STD_LOGIC;
+           ALUOutORPC : out STD_LOGIC;
+           PCAddress : out STD_LOGIC;
+           RegWrite : out STD_LOGIC;
+           zeroInputForAlu : out STD_LOGIC);
+    end component;
+
+    component andg2
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+    end component;
+
+    component Halt_Detector
+    port (
+        opcode : in  std_logic_vector(6 downto 0);
+        funct7 : in  std_logic_vector(6 downto 0);
+        halt   : out std_logic
+    );
+    end component;
+
+    component org2
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+    end component;
+
+    component xorg2
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+    end component;
+
+    component dffg_N
+  generic(
+    N : integer := 32
+  );
+  port(i_CLK        : in std_logic; --Clock input
+       i_RST        : in std_logic; --Reset input
+       i_WE         : in std_logic; --Write enable input (Stall)
+       i_Flush         : in std_logic; --Write enable input (Flush)
+       i_D          : in std_logic_vector(N-1 downto 0); --Data value input
+       o_Q          : out std_logic_vector(N-1 downto 0)); --Data value output
+    end component;
+
+    component HazardDetection_StallsOnly
+    Port ( PC_reg_Enable : out std_logic;
+	   checkforBranch : in std_logic;
+	   PrSRCInput : in std_logic;
+	   mem_write : in std_logic;
+	   noOPLoopIn : in std_logic;
+	   noOPLoopOut : out std_logic;
+	   IF_rs1 : in std_logic_vector(4 downto 0);
+ 	   IF_rs2 : in std_logic_vector(4 downto 0);
+ 	   ID_RegWrite : in std_logic;
+ 	   ID_rd : in std_logic_vector(4 downto 0);
+ 	   EX_RegWrite : in std_logic;
+ 	   EX_rd : in std_logic_vector(4 downto 0);
+ 	   MEM_rd : in std_logic_vector(4 downto 0); --prob not going to be used but just in case
+           o_Stall : out std_logic_vector(3 downto 0);
+           o_Flush : out std_logic_vector(3 downto 0));
+    end component;
+
+
+    --Control Signals
+    signal Wire_Opcode : std_logic_vector(6 downto 0);
+    signal Wire_ALUSrc : STD_LOGIC;
+    signal Wire_ALUControl : std_logic_vector(3 downto 0);
+    signal Wire_ImmType : std_logic_vector(2 downto 0);
+    signal Wire_ResultSrc : STD_LOGIC;
+    signal Wire_MemWrite : STD_LOGIC;
+    signal Wire_RegWrite : STD_LOGIC;
+    signal Wire_RegDst : STD_LOGIC; 
+    signal Wire_PCSrc : STD_LOGIC;
+
+    signal s_Inst_24to20 : std_logic_vector(4 downto 0);
+    signal s_Inst_19to15 : std_logic_vector(4 downto 0);
+    signal s_Inst_11to7 : std_logic_vector(4 downto 0);
+
+    signal register1TOALU : std_logic_vector(31 downto 0);
+    signal register2TOALU : std_logic_vector(31 downto 0);
+    signal extenderTOMUX : std_logic_vector(31 downto 0);
+    signal mux2t1TOALU : std_logic_vector(31 downto 0);
+
+    signal wireZero : STD_LOGIC;
+    signal Branch_Wire : STD_LOGIC;
+    signal s_ALUOut : std_logic_vector(31 downto 0);
+    signal funct7 : std_logic_vector(6 downto 0);
+    signal funct3 : std_logic_vector(2 downto 0);
+    signal orw1 : STD_LOGIC;
+    signal orw2 : STD_LOGIC;
+    signal s_PCAddress : STD_LOGIC;
+    signal muxTOALU_A : std_logic_vector(31 downto 0);
+    signal Overflow_Wire : STD_LOGIC;
+    signal xorTOandg : STD_LOGIC;
+    signal branchFunct3Wire : STD_LOGIC;
+
+    signal s_WritePCORResultSrc : STD_LOGIC;
+    signal s_ALUOutORPC : STD_LOGIC;
+    signal s_zeroMuxWire : STD_LOGIC;
+    signal s_zeroMUxWireThing : std_logic_vector(31 downto 0);
+    signal s_wireWBmux : std_logic_vector(31 downto 0);
+    signal s_pcPLUS4 : std_logic_vector(31 downto 0);
+    signal doINeedAWireHere : std_logic_vector(31 downto 0);
+
+    --Software Pipelined Signals
+    signal IF_stage_Register : std_logic_vector(95 downto 0);
+    signal ID_stage_Register : std_logic_vector(210 downto 0);
+    signal EX_stage_Register : std_logic_vector(118 downto 0);
+    signal MEM_stage_Register : std_logic_vector(51 downto 0);
+
+   --Other Signals added for software pipeline
+    signal overFlow_Seperate_FetchAdder : STD_LOGIC;
+    signal halt_Wire : STD_LOGIC;
+    signal currentInst : std_logic_vector(31 downto 0);
+    signal wireTOWB : std_logic_vector(31 downto 0);
+    signal wireBetweenFetchAndMux : std_logic_vector(31 downto 0);
+    signal anotherWireYay : std_logic_vector(31 downto 0);
+
+    signal flush_Wire : std_logic_vector(3 downto 0);
+    signal stall_Wire : std_logic_vector(3 downto 0);
+    signal AcutallyIliedThisIsInstAddress : std_logic_vector(31 downto 0);
+
+    signal enablePCWrite : STD_LOGIC;
+
+    signal noOPerationLoopChecker : STD_LOGIC;
+
+
+begin
+
+  -- TODO: This is required to be your final input to your instruction memory. This provides a feasible method to externally load the memory module which means that the synthesis tool must assume it knows nothing about the values stored in the instruction memory. If this is not included, much, if not all of the design is optimized out because the synthesis tool will believe the memory to be all zeros.
+  with iInstLd select
+    s_IMemAddr <= s_NextInstAddr when '0',
+      iInstAddr when others;
+
+
+  IMem: mem
+    generic map(ADDR_WIDTH => ADDR_WIDTH,
+                DATA_WIDTH => N)
+    port map(clk  => iCLK,
+             addr => s_IMemAddr(11 downto 2),
+             data => iInstExt,
+             we   => iInstLd,
+             q    => s_Inst);
+  
+  DMem: mem
+    generic map(ADDR_WIDTH => ADDR_WIDTH,
+                DATA_WIDTH => N)
+    port map(clk  => iCLK,
+             addr => s_DMemAddr(11 downto 2),
+             data => s_DMemData,
+             we   => s_DMemWr,
+             q    => s_DMemOut);
+
+
+  -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 1110011)
+    Control: Control_Logic Port map (Wire_Opcode, funct7, funct3, Branch_Wire, Wire_ALUSrc, Wire_ALUControl, Wire_ImmType, Wire_ResultSrc, Wire_MemWrite, Wire_PCSrc, Wire_RegDst, halt_Wire, s_WritePCORResultSrc, s_ALUOutORPC, s_PCAddress, Wire_RegWrite, s_zeroMuxWire);
+
+  -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
+
+  -- TODO: Implement the rest of your processor below this comment! 
+
+
+AcutallyIliedThisIsInstAddress <= s_NextInstAddr;
+
+    branchFunct3Wire <= wireZero when ID_stage_Register(161 downto 159) = "000" else --BEQ
+             (s_ALUOut(31) XOR (s_ALUOut(31) XOR Overflow_Wire)) when ID_stage_Register(161 downto 159) = "101" else --BGE
+             Overflow_Wire when ID_stage_Register(161 downto 159) = "111" else --BGEU
+             NOT(Overflow_Wire) when ID_stage_Register(161 downto 159) = "110" else --BLTU
+             NOT(wireZero) when ID_stage_Register(161 downto 159) = "001" else --BNE
+             ((NOT(s_ALUOut(31)) XOR (s_ALUOut(31) XOR Overflow_Wire)) OR (Overflow_Wire AND s_ALUOut(31))) when ID_stage_Register(161 downto 159) = "100"; --BLT
+
+SetPrc2: andg2 Port map (ID_stage_Register(32), branchFunct3Wire, orw1); --If Branch Control = 1 AND ALU Zero = 1 then orw1 = 1
+firstOr: org2 Port map (orw1, ID_stage_Register(43), orw2); --If orw1 = 1, OR Wire_PCSrc (I think is is ID_stage register(43) now?) = 1, perform the immi addition to fetch logic
+
+    funct7(0) <= IF_stage_Register(25);
+    funct7(1) <= IF_stage_Register(26);
+    funct7(2) <= IF_stage_Register(27);
+    funct7(3) <= IF_stage_Register(28);
+    funct7(4) <= IF_stage_Register(29);
+    funct7(5) <= IF_stage_Register(30);
+    funct7(6) <= IF_stage_Register(31);
+
+    funct3(0) <= IF_stage_Register(12);
+    funct3(1) <= IF_stage_Register(13);
+    funct3(2) <= IF_stage_Register(14);
+
+    Wire_Opcode(0) <= IF_stage_Register(0);
+    Wire_Opcode(1) <= IF_stage_Register(1);
+    Wire_Opcode(2) <= IF_stage_Register(2);
+    Wire_Opcode(3) <= IF_stage_Register(3);
+    Wire_Opcode(4) <= IF_stage_Register(4);
+    Wire_Opcode(5) <= IF_stage_Register(5);
+    Wire_Opcode(6) <= IF_stage_Register(6);
+
+
+    s_Inst_24to20(0) <= IF_stage_Register(20);
+    s_Inst_24to20(1) <= IF_stage_Register(21);
+    s_Inst_24to20(2) <= IF_stage_Register(22);
+    s_Inst_24to20(3) <= IF_stage_Register(23);
+    s_Inst_24to20(4) <= IF_stage_Register(24);
+
+    s_Inst_11to7(0) <= IF_stage_Register(7);
+    s_Inst_11to7(1) <= IF_stage_Register(8);
+    s_Inst_11to7(2) <= IF_stage_Register(9);
+    s_Inst_11to7(3) <= IF_stage_Register(10);
+    s_Inst_11to7(4) <= IF_stage_Register(11);
+
+    s_Inst_19to15(0) <= IF_stage_Register(15);
+    s_Inst_19to15(1) <= IF_stage_Register(16);
+    s_Inst_19to15(2) <= IF_stage_Register(17);
+    s_Inst_19to15(3) <= IF_stage_Register(18);
+    s_Inst_19to15(4) <= IF_stage_Register(19);
+
+    s_RegWrAddr <= MEM_stage_Register(50 downto 46);
+
+
+  ResultSRCMUXTOWriteback: mux2t1_N
+    generic map(N => 32)
+    port map(i_S  => EX_stage_Register(118),
+             i_D0 => s_wireWBmux,
+             i_D1 => anotherWireYay,
+             o_O   => wireTOWB);
+
+    s_RegWrData <= MEM_stage_Register(31 downto 0);
+
+    s_RegWr <= MEM_stage_Register(51);
+
+    RegisterFile: Register_File Port map (s_Inst_19to15, s_Inst_24to20, s_RegWrAddr, iCLK, MEM_stage_Register(31 downto 0), s_RegWr, iRST, register1TOALU, register2TOALU);
+
+    extender: extender_12t32 Port map (ID_stage_Register(178 downto 147), Wire_ImmType, extenderTOMUX);
+
+  mux2T1_32b: mux2t1_N
+    generic map(N => 32)
+    port map(i_S  => ID_stage_Register(33),
+             i_D0 => ID_stage_Register(146 downto 115), --register2TOALU
+             i_D1 => extenderTOMUX,
+             o_O   => mux2t1TOALU);
+
+doINeedAWireHere <= (31 downto 0 => wireZero);  
+
+zeroOutputMux: mux2t1_N
+    generic map(N => 32)
+    port map(i_S  => ID_stage_Register(50),
+             i_D0 => ID_stage_Register(114 downto 83),
+             i_D1 => doINeedAWireHere,
+             o_O   => s_zeroMUxWireThing);
+
+    Alufile: ALU Port map (ID_stage_Register(159), mux2t1TOALU, muxTOALU_A, ID_stage_Register(37 downto 34), Overflow_Wire, wireZero, s_ALUOut);
+
+    s_Ovfl <= '0';
+
+    oALUOut <= s_ALUOut;
+    s_DMemAddr <= EX_stage_Register(63 downto 32);
+    s_DMemData <= EX_stage_Register(95 downto 64);
+    s_DMemWr <= EX_stage_Register(116);
+
+  mux2T1_32b_2: mux2t1_N
+    generic map(N => 32)
+    port map(i_S  => EX_stage_Register(117),
+             i_D0 => s_DMemAddr,
+             i_D1 => s_DMemOut,
+             o_O   => s_wireWBmux);
+
+
+ fetch: Fetch_Logic Port map (enablePCWrite, iCLK, iRST, ID_stage_Register(153 downto 147), currentInst, extenderTOMUX, orw2, ID_stage_Register(47), s_ALUOut, s_pcPLUS4, s_NextInstAddr);
+
+  mux2T1_32b_3: mux2t1_N
+    generic map(N => 32)
+    port map(i_S  => ID_stage_Register(48),
+             i_D0 => s_zeroMUxWireThing,
+             i_D1 => ID_stage_Register(210 downto 179), --HERE
+             o_O   => muxTOALU_A);
+
+
+
+
+
+
+
+--FETCH INSTRUCTION
+
+
+
+newAdderForFetchLogic: Adder_Subtractor
+    generic map(N => 32)
+    port map(A  => s_NextInstAddr,
+             B => x"00000004",
+             nAdd_Sub => '0',
+             Sum   => currentInst,
+             Cout    => overFlow_Seperate_FetchAdder);
+
+--subtractorForWritingPCAddress: Adder_Subtractor
+    --generic map(N => 32)
+   -- port map(A  => s_NextInstAddr,
+     --        B => x"00000008",
+     --        nAdd_Sub => '1',
+     --        Sum   => wireBetweenFetchAndMux,
+     --        Cout    => overFlow_Seperate_FetchAdder);
+
+subtractorForWritingPCAddressButForExectuteNow: Adder_Subtractor
+    generic map(N => 32)
+    port map(A  => EX_stage_Register(31 downto 0),
+             B => x"00000008",
+             nAdd_Sub => '1',
+             Sum   => anotherWireYay,
+             Cout    => overFlow_Seperate_FetchAdder);
+
+
+
+  IF_ID_Reg: dffg_N --REGISTER HERE
+  generic map(N => 96)
+  port map(
+     i_CLK => iCLK,
+     i_RST => iRST,
+     i_WE => stall_Wire(0),
+     i_Flush => flush_Wire(0),
+     i_D(31 downto 0) => s_Inst, --Current fetched instruction
+     i_D(63 downto 32) => currentInst, --Next instruction address
+     i_D(95 downto 64) => AcutallyIliedThisIsInstAddress, --Next instruction address
+     o_Q => IF_stage_Register
+  );
+
+--INSTRUCTION DECODE
+
+HazardDetector : HazardDetection_StallsOnly Port map(enablePCWrite, orw2, ID_stage_Register(43), MEM_stage_Register(51), noOPerationLoopChecker, noOPerationLoopChecker, IF_stage_Register(19 downto 15), IF_stage_Register(24 downto 20), ID_stage_Register(49), ID_stage_Register(158 downto 154), EX_stage_Register(115), EX_stage_Register(114 downto 110), MEM_stage_Register(50 downto 46), stall_Wire, flush_Wire);
+
+
+
+  ID_EX_Reg: dffg_N --REGISTER HERE
+  generic map(N => 211)
+  port map(
+     i_CLK => iCLK,
+     i_RST => iRST,
+     i_WE => stall_Wire(1),
+     i_Flush => flush_Wire(1),
+     i_D(31 downto 0) => IF_stage_Register(63 downto 32), --FetchLogicAddress
+     i_D(32) => Branch_Wire, --Branch_Wire
+     i_D(33) => Wire_ALUSrc, --Wire_ALUSrc
+     i_D(37 downto 34) => Wire_ALUControl, --Wire_ALUControl
+     i_D(40 downto 38) => Wire_ImmType, --Wire_ImmType
+     i_D(41) => Wire_ResultSrc, --Wire_ResultSrc
+     i_D(42) => Wire_MemWrite, --Wire_MemWrite
+     i_D(43) => Wire_PCSrc, --Wire_PCSrc
+     i_D(44) => Wire_RegDst, --Wire_RegDst
+     i_D(45) => halt_Wire, --halt_Wire
+     i_D(46) => s_WritePCORResultSrc, --s_WritePCORResultSrc
+     i_D(47) => s_ALUOutORPC, --s_ALUOutORPC
+     i_D(48) => s_PCAddress, --s_PCAddress
+     i_D(49) => Wire_RegWrite, --Wire_RegWrite
+     i_D(50) => s_zeroMuxWire, --s_zeroMuxWire
+     i_D(82 downto 51) => doINeedAWireHere, --zer
+     i_D(114 downto 83) => register1TOALU, --Data 1
+     i_D(146 downto 115) => register2TOALU, --Data 2
+     i_D(178 downto 147) => IF_stage_Register(31 downto 0), --the inst instruction?
+     i_D(210 downto 179) => IF_stage_Register(95 downto 64), --address for CURRENT instruction
+     o_Q => ID_stage_Register
+  );
+
+--EXECUTE
+
+
+
+
+  EX_MEM_Reg: dffg_N --REGISTER HERE
+  generic map(N => 119)
+  port map(
+     i_CLK => iCLK,
+     i_RST => iRST,
+     i_WE => stall_Wire(2),
+     i_Flush => flush_Wire(2),
+     i_D(31 downto 0) => s_pcPLUS4, --s_pcPLUS4
+     i_D(63 downto 32) => s_ALUOut, --ALu out
+     i_D(95 downto 64) => ID_stage_Register(146 downto 115), --Data 2 coming out from previous stage
+     i_D(102 downto 96) => ID_stage_Register(153 downto 147), --opcode 178 downto 147 (7 bits total)
+     i_D(109 downto 103) => ID_stage_Register(178 downto 172), --funct7 (7 bits total)
+     i_D(114 downto 110) => ID_stage_Register(158 downto 154), --rd location
+     i_D(115) => ID_stage_Register(49), --Reg Write
+     i_D(116) => ID_stage_Register(42), --Mem Write
+     i_D(117) => ID_stage_Register(41), --ResultSRC
+     i_D(118) => ID_stage_Register(46), --WritePCORResultSRC
+     o_Q => EX_stage_Register
+  );
+
+--MEMORY
+
+
+
+  MEM_WE_Reg: dffg_N --REGISTER HERE
+  generic map(N => 52)
+  port map(
+     i_CLK => iCLK,
+     i_RST => iRST,
+     i_WE => stall_Wire(3),
+     i_Flush => flush_Wire(3),
+     i_D(31 downto 0) => wireTOWB, --Final data value for register
+     i_D(38 downto 32) => EX_stage_Register(102 downto 96), --Opcode Value
+     i_D(45 downto 39) => EX_stage_Register(109 downto 103), --Funct7 Value
+     i_D(50 downto 46) => EX_stage_Register(114 downto 110), --RD location
+     i_D(51) => EX_stage_Register(115), --write enable signal --EX_stage_Register(115)
+     o_Q => MEM_stage_Register
+  );
+
+--WRITE BACK
+
+  Halt_in_WB: Halt_Detector Port map (MEM_stage_Register(38 downto 32), MEM_stage_Register(45 downto 39), s_Halt);
+
+
+
+
+
+
+
+
+
+end structure;
+

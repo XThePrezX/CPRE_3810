@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------
+-- Joseph Zambreno
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- Adder.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains an implementation of a behavioral 
+-- signed adder operating on std_logic_vector inputs. 
+--
+--
+-- NOTES: For simplicity, we caslibrary IEEE;
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity MIPS_ALU is
+    Port (
+        A         : in  std_logic_vector(31 downto 0);
+        B         : in  std_logic_vector(31 downto 0);
+        ALUCtrl   : in  std_logic_vector(3 downto 0);
+        F         : out std_logic_vector(31 downto 0);
+        CarryOut  : out std_logic;
+        Overflow  : out std_logic;
+        Zero      : out std_logic
+    );
+end MIPS_ALU;
+
+architecture Behavioral of MIPS_ALU is
+    signal result     : std_logic_vector(31 downto 0);
+    signal carry      : std_logic;
+    signal ovf        : std_logic;
+    signal b_invert   : std_logic;
+    signal b_operand  : std_logic_vector(31 downto 0);
+    signal signed_A, signed_B : signed(31 downto 0);
+    signal signed_res : signed(31 downto 0);
+begin
+
+    signed_A <= signed(A);
+    signed_B <= signed(B);
+
+    process(A, B, ALUCtrl)
+    begin
+        carry    <= '0';
+        ovf      <= '0';
+
+        case ALUCtrl is
+            when "0000" =>  -- AND
+                result <= A and B;
+
+            when "0001" =>  -- OR
+                result <= A or B;
+
+            when "0010" =>  -- ADD (signed)
+                signed_res := signed_A + signed_B;
+                result     <= std_logic_vector(signed_res);
+                carry      <= '0';
+                ovf        <= (A(31) xor B(31) = '0') and (A(31) xor result(31) = '1');
+
+            when "0110" =>  -- SUB (signed)
+                signed_res := signed_A - signed_B;
+                result     <= std_logic_vector(signed_res);
+                carry      <= '0';
+                ovf        <= (A(31) xor B(31) = '1') and (A(31) xor result(31) = '1');
+
+            when "0011" =>  -- SLT (signed)
+                if signed_A < signed_B then
+                    result <= x"00000001";
+                else
+                    result <= x"00000000";
+                end if;
+
+            when "0100" =>  -- XOR
+                result <= A xor B;
+
+            when "0101" =>  -- NOR
+                result <= not (A or B);
+
+            when "1000" =>  -- SLL (shift left logical)
+                result <= B sll to_integer(unsigned(A(4 downto 0)));
+
+            when "1001" =>  -- SRL (shift right logical)
+                result <= B srl to_integer(unsigned(A(4 downto 0)));
+
+            when "1010" =>  -- SRA (shift right arithmetic)
+                result <= std_logic_vector(shift_right(signed(B), to_integer(unsigned(A(4 downto 0)))));
+
+            when "1011" =>  -- SLLV (variable shift left)
+                result <= B sll to_integer(unsigned(A(4 downto 0)));
+
+            when "1100" =>  -- SRLV (variable shift right logical)
+                result <= B srl to_integer(unsigned(A(4 downto 0)));
+
+            when "1101" =>  -- SRAV (variable shift right arithmetic)
+                result <= std_logic_vector(shift_right(signed(B), to_integer(unsigned(A(4 downto 0)))));
+
+            when others =>
+                result <= (others => '0');
+        end case;
+    end process;
+
+    F        <= result;
+    CarryOut <= carry;
+    Overflow <= ovf;
+    Zero     <= '1' when result = x"00000000" else '0';
+
+end Behavioral;

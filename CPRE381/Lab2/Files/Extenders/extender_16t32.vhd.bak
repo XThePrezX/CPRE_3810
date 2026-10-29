@@ -1,0 +1,28 @@
+--16 to 32 bit extender
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity extender16t32 is 
+    port (
+        i_value : in std_logic_vector(15 downto 0);
+        o_value : out std_logic_vector(31 downto 0);
+        i_signExtension : in std_logic 
+    );
+end extender16t32;
+
+architecture behavioral of extender16t32 is
+begin
+    process(i_value, i_signExtension)
+    begin
+        if i_signExtension = '1' then
+            o_value <= (i_value(15) & i_value(15) & i_value(15) & i_value(15) & 
+                        i_value(15) & i_value(15) & i_value(15) & i_value(15) &
+                        i_value(15) & i_value(15) & i_value(15) & i_value(15) &
+                        i_value(15) & i_value(15) & i_value(15) & i_value(15)) & i_value;
+        else
+            o_value <= (x"0000" & i_value); -- Zero extension
+        end if;
+    end process;
+end behavioral;
+

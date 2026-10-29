@@ -1,0 +1,49 @@
+[N
+5
+5
+1 N
+3
+5 mixed
+2
+17 tb_extender_12t32
+4
+9 gCLK_HPER
+1
+79 /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/MySecondRISCVDatapath/work
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]
+[G
+1
+2
+3
+1
+5
+0
+0
+32
+0
+0 0
+0
+0
+]

@@ -1,0 +1,65 @@
+[N
+6
+5
+10 ADDR_WIDTH
+3
+5 mixed
+6
+10 DATA_WIDTH
+1
+64 /home/pgask26/cpre381/CPRE381 NEW/lab2_contents/Lab2/Memory/work
+2
+7 tb_dmem
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+5
+1
+0
+10
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+6
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]
